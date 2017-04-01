@@ -4,19 +4,21 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     
-    <img src="./assets/img/suacasa-logo-app.png" width="160" />
+    <img src="./assets/img/suacasa-logo-app.png" width="180" />
 
     <ion-title> </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content >
+
+<ion-content class="masters" >
+
   <ion-list>
 
      <ion-card padding *ngFor="let post of posts" (click)="goPost( post )" > 
 
        <h1 [innerHTML]="post.titulo"  ></h1>
        <img [src]="post.thumb" />        
-       <p  [innerHTML]="post.resumo" ></p>      
+       leia mais ...   <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon>      
 
      </ion-card>
 
